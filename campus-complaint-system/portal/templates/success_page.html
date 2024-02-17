@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<title>Report Submission Success</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #4caf50;
+    }
+
+    p {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .tick {
+        color: #4caf50;
+        font-size: 48px;
+    }
+
+    a {
+        color: #4caf50;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+
+<div class="container">
+<div class="tick">&#10004;</div>
+<h2>Message Sent Successfully</h2>
+<p>Your complaint has been submitted successfully. We will review it and take appropriate action. Thank you for your feedback!</p>
+<p>Return to <a href="{% url 'home' %}">home</a></p>
+</div>
+</body>
+{% endblock %}

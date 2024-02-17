@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block title %} File a new Complaint {% endblock %}
+{% block content %}
+
+<div class="my-5 p-5">
+  <form method="POST" action="{% url 'submit_complaint' %}">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        name="title"
+        placeholder="Whats the issue ?"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="discription" class="form-label">Description</label>
+      <textarea class="form-control" id="status" name="discription" rows="3"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="faculty" class="form-label"
+        >Faculty you want to report complaint to</label
+      >
+      <select class="form-select" id='faculty' name="faculty" aria-label="Default select example">
+        <option selected>Assign Faculty</option>
+        <option value="Department">Department</option>
+        <option value="Facility Management">Facility Management</option>
+        <option value="General Management">General Management</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="date" class="form-label">Date</label>
+      <input type="datetime-local" class="form-control" name="date" id="date" />
+    </div>
+    <button class="btn btn-primary my-3">Submit</button>
+  </form>
+</div>
+
+{% load static %} {% endblock %}
