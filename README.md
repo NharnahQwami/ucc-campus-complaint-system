@@ -10,8 +10,12 @@ The Campus Complaint App is a web-based platform designed for university campus 
 - **User Authentication:** Secure user authentication for faculty accounts.
 
 ## Screenshot below
+
+### All Complaints Page
 ![All Complaint Page](https://github.com/NharnahQwami/ucc-campus-complaint-system/blob/main/All%20Complaints.png)
 
+### File a Complaint Page
 ![File Complaint Page](https://github.com/NharnahQwami/ucc-campus-complaint-system/blob/main/file%20complaint.png)
+
 
 [Website Link](https://ucccampuscomplaintsystem.pythonanywhere.com/)
